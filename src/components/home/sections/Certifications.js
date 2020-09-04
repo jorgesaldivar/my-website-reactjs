@@ -7,6 +7,7 @@ const Certifications = () => {
       <h2 class="text-center">Certifications</h2>
 
       <br />
+
       <Row>
         <Col sm={4}>
           <Card>
@@ -36,6 +37,8 @@ const Certifications = () => {
         </Col>
       </Row>
 
+      <br />
+
       <Row>
         <Col sm={4}>
           <Card>
@@ -53,10 +56,6 @@ const Certifications = () => {
               <Image src="/images/OCP-8.png" thumbnail />
             </Card.Body>
           </Card>
-        </Col>
-
-        <Col sm={4}>
-          <Card></Card>
         </Col>
       </Row>
     </Container>

@@ -49,10 +49,6 @@ const Projects = () => {
             </Card.Body>
           </Card>
         </Col>
-
-        <Col sm={4}>
-          <Card></Card>
-        </Col>
       </Row>
     </Container>
   );

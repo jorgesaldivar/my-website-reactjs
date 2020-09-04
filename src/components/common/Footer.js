@@ -18,7 +18,7 @@ const Footer = () => {
             </span>
           </Col>
 
-          <Col sm={6} className="text-right">
+          <Col sm={6} className="footer text-right">
             <a
               href="https://github.com/jorgesaldivar"
               target="_blank"

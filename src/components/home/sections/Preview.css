@@ -1,0 +1,24 @@
+.well {
+  background-color: #e9ecef;
+}
+
+/* .carousel-indicators {
+  display: none;
+  visibility: hidden;
+} */
+
+.carousel-indicators li {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+/* 
+.carousel-control-prev {
+  display: none;
+  visibility: hidden;
+}
+
+.carousel-control-next {
+  display: none;
+  visibility: hidden;
+} */

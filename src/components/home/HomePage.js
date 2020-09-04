@@ -3,7 +3,7 @@ import "./HomePage.css";
 import NavHeader from "../common/NavHeader";
 import JumboTron from "./sections/JumboTron";
 import AboutMe from "./sections/AboutMe";
-import ProfileData from "./sections/ProfileData";
+import Preview from "./sections/Preview";
 import Certifications from "./sections/Certifications";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
@@ -15,10 +15,18 @@ const HomePage = () => {
       <NavHeader />
       <JumboTron />
       <AboutMe />
-      <ProfileData />
+      <Preview />
       <div className="back-pattern">
+        <br />
+        <br />
         <Certifications />
+        <br />
+        <hr />
+        <br />
         <Skills />
+        <br />
+        <hr />
+        <br />
         <Projects />
       </div>
       <Footer />
