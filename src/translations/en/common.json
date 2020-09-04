@@ -3,5 +3,38 @@
     "home": "Home Page",
     "contact": "CONTACT",
     "source": "SOURCE CODE"
+  },
+  "Footer": {
+    "copyrights": "All rights reserved."
+  },
+  "JumboTron": {
+    "title": "- Passionate Software Guru -"
+  },
+  "AboutMe": {
+    "about": "About me",
+    "educationTitle": "Education:",
+    "education": "B.S. in Information and Computer Science at Monterrey Institute of Technology and Higher Education",
+    "experienceTitle": "Experience:",
+    "experience": "+{{years}} years of experience in software industry. Mostly experienced in programming languages such as Java EE, Spring, JPA, JavaScript, and Oracle SQL for RDBMS. Projects I have worked on:",
+    "experienceOne": "Software Development",
+    "experienceTwo": "Data Analysis",
+    "experienceThree": "Scripting",
+    "resume": "Resume"
+  },
+  "Preview": {
+    "title": "Words that Describe Myself",
+    "firstItem": "\"Study! Study! Study! - Kintaro Oe\"",
+    "secondItem": "\"Thinking outside the box\""
+  },
+  "Certifications": {
+    "title": "Certifications"
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Projects": {
+    "title": "Projects",
+    "firstItem": "My open source libraries",
+    "secondItem": "Udemy instructor"
   }
 }

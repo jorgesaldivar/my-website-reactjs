@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 
-const Certifications = () => {
+const Certifications = (props) => {
   return (
     <Container>
-      <h2 class="text-center">Certifications</h2>
+      <h2 class="text-center">{props.title}</h2>
 
       <br />
 

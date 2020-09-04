@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <Container>
-      <h2 class="text-center">Projects</h2>
+      <h2 class="text-center">{props.title}</h2>
 
       <br />
 
@@ -16,15 +15,19 @@ const Projects = () => {
               <a
                 href="https://hubbledouble.com"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="external noopener noreferrer"
               >
-                My open source libraries
+                {props.firstItem}
               </a>
             </Card.Header>
             <Card.Body>
-              <Link to="https://hubbledouble.com" target="_blank">
+              <a
+                href="https://hubbledouble.com"
+                target="_blank"
+                rel="external noopener noreferrer"
+              >
                 <Image src="/images/hubbledouble.png" thumbnail />
-              </Link>
+              </a>
             </Card.Body>
           </Card>
         </Col>
@@ -32,20 +35,22 @@ const Projects = () => {
         <Col sm={4}>
           <Card>
             <Card.Header>
-              <Link
-                to="https://www.udemy.com/course/curso-completo-de-spring-web-mvc-y-spring-webflux-reactive/?referralCode=BEC9DEE4C57BE89F23E4"
+              <a
+                href="https://www.udemy.com/course/curso-completo-de-spring-web-mvc-y-spring-webflux-reactive/?referralCode=BEC9DEE4C57BE89F23E4"
                 target="_blank"
+                rel="external noopener noreferrer"
               >
-                Udemy Instructor
-              </Link>
+                {props.secondItem}
+              </a>
             </Card.Header>
             <Card.Body>
-              <Link
-                to="https://www.udemy.com/course/curso-completo-de-spring-web-mvc-y-spring-webflux-reactive/?referralCode=BEC9DEE4C57BE89F23E4"
+              <a
+                href="https://www.udemy.com/course/curso-completo-de-spring-web-mvc-y-spring-webflux-reactive/?referralCode=BEC9DEE4C57BE89F23E4"
                 target="_blank"
+                rel="external noopener noreferrer"
               >
                 <Image src="/images/spring-udemy-logo.png" thumbnail />
-              </Link>
+              </a>
             </Card.Body>
           </Card>
         </Col>

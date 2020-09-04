@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import "./Skills.css";
 
-const Skills = () => {
+const Skills = (props) => {
   return (
     <Container className="text-center skills">
-      <h2 class="text-center">Skills</h2>
+      <h2 class="text-center">{props.title}</h2>
 
       <br />
 
@@ -18,7 +18,7 @@ const Skills = () => {
             <FontAwesomeIcon icon={["fab", "java"]} size="2x" />
             <span>&nbsp;</span>
 
-            <h4>JAVA</h4>
+            <h4>Java</h4>
             <p>Back-End</p>
           </Card>
         </Col>
@@ -28,7 +28,7 @@ const Skills = () => {
             <FontAwesomeIcon icon={["fab", "js-square"]} size="2x" />
             <span>&nbsp;</span>
 
-            <h4>JAVASCRIPT</h4>
+            <h4>JavaScript</h4>
             <p>Front-End</p>
           </Card>
         </Col>
@@ -37,7 +37,7 @@ const Skills = () => {
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "python"]} size="2x" />
             <span>&nbsp;</span>
-            <h4>PYTHON</h4>
+            <h4>Python</h4>
             <p>Back-End</p>
           </Card>
         </Col>

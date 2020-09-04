@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <>
       <br />
@@ -13,8 +12,7 @@ const Footer = () => {
         <Row>
           <Col sm={6}>
             <span>
-              © {new Date().getFullYear()} JorgeSaldivar.com. All rights
-              reserved.
+              © {new Date().getFullYear()} JorgeSaldivar.com. {props.copyrights}
             </span>
           </Col>
 
@@ -22,9 +20,13 @@ const Footer = () => {
             <a
               href="https://github.com/jorgesaldivar"
               target="_blank"
-              rel="external"
+              rel="external noopener noreferrer"
             >
-              <FontAwesomeIcon icon={["fab", "github"]} size="3x" />
+              <FontAwesomeIcon
+                icon={["fab", "github"]}
+                size="3x"
+                className={styles.icons}
+              />
             </a>
 
             <span>&nbsp;</span>
@@ -32,9 +34,13 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/jorgesaldivar1"
               target="_blank"
-              rel="external"
+              rel="external noopener noreferrer"
             >
-              <FontAwesomeIcon icon={["fab", "linkedin"]} size="3x" />
+              <FontAwesomeIcon
+                icon={["fab", "linkedin"]}
+                size="3x"
+                className={styles.icons}
+              />
             </a>
           </Col>
         </Row>

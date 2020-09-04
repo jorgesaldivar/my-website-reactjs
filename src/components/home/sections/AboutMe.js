@@ -1,35 +1,27 @@
 import React from "react";
-import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
-import "./AboutMe.css";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
+import skills from "./AboutMe.module.css";
 
-const AboutMe = () => {
+const AboutMe = (props) => {
   return (
-    <div className="about-me-container">
+    <div className={skills.aboutMeContainer}>
       <Container>
         <Row>
           <Col sm={9}>
             <Card>
-              <Card.Body className="well">
-                <h2>About me</h2>
+              <Card.Body className={skills.well}>
+                <h2>{props.about}</h2>
 
-                <strong>Education:</strong>
-                <p>
-                  B.S. in Information and Computer Science at Monterrey
-                  Institute of Technology and Higher Education
-                </p>
+                <strong>{props.educationTitle}</strong>
+                <p>{props.education}</p>
 
-                <strong>Experience:</strong>
-                <p>
-                  +3 years of experience in software industry. Mostly
-                  experienced in programming languages such as Java EE, Spring,
-                  JPA, JavaScript, and Oracle SQL for RDBMS. Projects I have
-                  worked on:
-                </p>
+                <strong>{props.experienceTitle}</strong>
+                <p>{props.experience}</p>
 
                 <ul>
-                  <li>Software Development</li>
-                  <li>Data Analysis</li>
-                  <li>Scripting</li>
+                  <li>{props.experienceOne}</li>
+                  <li>{props.experienceTwo}</li>
+                  <li>{props.experienceThree}</li>
                 </ul>
               </Card.Body>
             </Card>
@@ -44,7 +36,7 @@ const AboutMe = () => {
 
             <br />
             <Button type="button" variant="primary" size="lg" block disabled>
-              Resume
+              {props.resume}
             </Button>
           </Col>
         </Row>

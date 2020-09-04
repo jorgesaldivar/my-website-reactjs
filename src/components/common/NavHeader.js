@@ -8,7 +8,7 @@ const NavHeader = (props) => {
     <>
       <Navbar className={styles.navbar} expand="lg" fixed="top" bg="light">
         <div class="container">
-          <Navbar.Brand href="#home">{props.home}</Navbar.Brand>
+          <Navbar.Brand href="">{props.home}</Navbar.Brand>
           <Navbar.Toggle
             className="navbar-toggle"
             aria-controls="basic-navbar-nav"
@@ -19,10 +19,17 @@ const NavHeader = (props) => {
           >
             <Nav className="ml-auto">
               <Nav.Item>
-                <Nav.Link href="#home">{props.contact}</Nav.Link>
+                <Nav.Link href="mailto:me@jorgesaldivar.com">
+                  {props.contact}
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#link">{props.source}</Nav.Link>
+                <Nav.Link
+                  href="https://github.com/jorgesaldivar/my-website-reactjs"
+                  target="_blank"
+                >
+                  {props.source}
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>

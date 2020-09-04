@@ -4,7 +4,7 @@ import { Jumbotron, Container, Col, Button } from "react-bootstrap";
 import "./JumboTron.css";
 import { useTranslation } from "react-i18next";
 
-const JumboTron = () => {
+const JumboTron = (props) => {
   const [t, i18n] = useTranslation("common");
   return (
     <Jumbotron>
@@ -24,7 +24,7 @@ const JumboTron = () => {
         </div>
         <div className="text-center">
           <h1>Jorge Saldivar</h1>
-          <h6>- Passionate Software Guru -</h6>
+          <h6>{props.title}</h6>
         </div>
       </Container>
     </Jumbotron>

@@ -3,5 +3,38 @@
     "home": "Inicio",
     "contact": "CONTACTO",
     "source": "CÓDIGO FUENTE"
+  },
+  "Footer": {
+    "copyrights": "Todos los derechos reservados."
+  },
+  "JumboTron": {
+    "title": "- Apasionado Software Gurú -"
+  },
+  "AboutMe": {
+    "about": "Acerca de mí",
+    "educationTitle": "Educación:",
+    "education": "Ingeniero en Tecnologías de Información y Comunicación en el Instituto Tecnológico y de Estudios Superiores de Monterrey",
+    "experienceTitle": "Educación:",
+    "experience": "+{{years}} años de experience en la industria de software. En su mayoría con experiencia en lenguajes de programación como: Java EE, Spring, JPA, JavaScript y Oracle SQL como RDBMS. Proyectos que he trabajado:",
+    "experienceOne": "Desarrollo de aplicaciones",
+    "experienceTwo": "Análisis de datos",
+    "experienceThree": "Scripting",
+    "resume": "Curriculum"
+  },
+  "Preview": {
+    "title": "Palabras que me describen",
+    "firstItem": "\"Aprendo! Aprendo! Aprendo! - Kintaro Oe\"",
+    "secondItem": "\"Pensar fuera de la caja\""
+  },
+  "Certifications": {
+    "title": "Certificaciones"
+  },
+  "Skills": {
+    "title": "Habilidades"
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "firstItem": "Mis librerias de código abierto",
+    "secondItem": "Instructor de Udemy"
   }
 }

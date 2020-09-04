@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
   const [t, i18n] = useTranslation("common");
+
   return (
     <>
       <NavHeader
@@ -19,23 +20,43 @@ const HomePage = () => {
         contact={t("NavHeader.contact")}
         source={t("NavHeader.source")}
       />
-      <JumboTron />
-      <AboutMe />
-      <Preview />
+      <JumboTron title={t("JumboTron.title")} />
+      <AboutMe
+        about={t("AboutMe.about")}
+        educationTitle={t("AboutMe.educationTitle")}
+        education={t("AboutMe.education")}
+        experienceTitle={t("AboutMe.experienceTitle")}
+        experience={t("AboutMe.experience", {
+          years: new Date().getFullYear() - new Date(2013, 6, 1).getFullYear(),
+        })}
+        experienceOne={t("AboutMe.experienceOne")}
+        experienceTwo={t("AboutMe.experienceTwo")}
+        experienceThree={t("AboutMe.experienceThree")}
+        resume={t("AboutMe.resume")}
+      />
+      <Preview
+        title={t("Preview.title")}
+        firstItem={t("Preview.firstItem")}
+        secondItem={t("Preview.secondItem")}
+      />
       <div className="back-pattern">
         <br />
         <br />
-        <Certifications />
+        <Certifications title={t("Certifications.title")} />
         <br />
         <hr />
         <br />
-        <Skills />
+        <Skills title={t("Skills.title")} />
         <br />
         <hr />
         <br />
-        <Projects />
+        <Projects
+          title={t("Projects.title")}
+          firstItem={t("Projects.firstItem")}
+          secondItem={t("Projects.secondItem")}
+        />
       </div>
-      <Footer />
+      <Footer copyrights={t("Footer.copyrights")} />
     </>
   );
 };
