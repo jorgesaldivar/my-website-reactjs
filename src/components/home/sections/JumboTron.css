@@ -6,3 +6,35 @@
 .jumbotron h1 {
   font-size: 63px;
 }
+
+/* .link-buttons.btn.btn-primary {
+  background-color: transparent;
+  border: none;
+  color: #0056b3;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.link-buttons.btn.btn-primary:hover,
+.link-buttons.btn.btn-primary:focus {
+  text-decoration: none;
+} */
+
+.link-buttons.btn.btn-primary {
+  text-align: left;
+  color: blue;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  -moz-user-select: text;
+}
+
+.link-buttons.btn.btn-primary:hover,
+.link-buttons.btn.btn-primary:focus {
+  color: black;
+}

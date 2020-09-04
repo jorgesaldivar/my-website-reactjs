@@ -8,11 +8,17 @@ import Certifications from "./sections/Certifications";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Footer from "../common/Footer";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+  const [t, i18n] = useTranslation("common");
   return (
     <>
-      <NavHeader />
+      <NavHeader
+        home={t("NavHeader.home")}
+        contact={t("NavHeader.contact")}
+        source={t("NavHeader.source")}
+      />
       <JumboTron />
       <AboutMe />
       <Preview />

@@ -1,13 +1,26 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Jumbotron, Container, Col } from "react-bootstrap";
+import { Jumbotron, Container, Col, Button } from "react-bootstrap";
 import "./JumboTron.css";
+import { useTranslation } from "react-i18next";
 
 const JumboTron = () => {
+  const [t, i18n] = useTranslation("common");
   return (
     <Jumbotron>
       <Container>
         <div className="text-right">
-          <a href="?lang=en">English</a> / <a href="?lang=es">Español</a>
+          <a
+            className="link-buttons"
+            href="#"
+            onClick={() => i18n.changeLanguage("en")}
+          >
+            English
+          </a>{" "}
+          /{" "}
+          <a href="#" onClick={() => i18n.changeLanguage("es")}>
+            Español
+          </a>
         </div>
         <div className="text-center">
           <h1>Jorge Saldivar</h1>
