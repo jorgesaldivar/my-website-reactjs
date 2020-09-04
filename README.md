@@ -1,6 +1,6 @@
 # JorgeSaldivar.com - Source Code
 
-\_Personal website migrated to ReactJS
+_Personal website migrated to ReactJS_
 
 You can run this site on your localhost by running
 
