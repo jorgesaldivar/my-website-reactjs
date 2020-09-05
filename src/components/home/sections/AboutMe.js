@@ -30,7 +30,7 @@ const AboutMe = ({ aboutMe }) => {
           <Col sm={3}>
             <Card>
               <Card.Body className={styles.well}>
-                <Card.Img src="/images/visa_logo_blu.png" />
+                <Card.Img src="/my-website-reactjs/images/visa_logo_blu.png" />
               </Card.Body>
             </Card>
 

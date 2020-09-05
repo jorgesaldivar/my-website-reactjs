@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const JumboTron = ({ jumboTron }) => {
   const [, i18n] = useTranslation("common");
   return (
-    <Jumbotron className={styles.jumbotron}>
+    <Jumbotron className={styles.main}>
       <Container>
         <div className="text-right">
           <Col className="d-block d-sm-none">
@@ -35,10 +35,13 @@ const JumboTron = ({ jumboTron }) => {
             Español
           </a>
         </div>
+        <br />
+        <br />
         <div className="text-center">
-          <h1 className={styles.jumbotronTitle}>Jorge Saldivar</h1>
+          <h1 className={styles.title}>Jorge Saldivar</h1>
           <h6>{jumboTron.title}</h6>
         </div>
+        <br />
       </Container>
     </Jumbotron>
   );

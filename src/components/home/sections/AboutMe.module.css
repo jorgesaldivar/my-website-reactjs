@@ -3,13 +3,14 @@
 }
 
 .aboutMeContainer {
-  background: url("/images/Austin_Evening.jpg") no-repeat center fixed;
+  background: url("/my-website-reactjs/images/Austin_Evening.jpg") no-repeat
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 80px 0px 80px 0px;
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 p {

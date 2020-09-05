@@ -26,7 +26,10 @@ const Projects = ({ projects }) => {
                 target="_blank"
                 rel="external noopener noreferrer"
               >
-                <Image src="/images/hubbledouble.png" thumbnail />
+                <Image
+                  src="/my-website-reactjs/images/hubbledouble.png"
+                  thumbnail
+                />
               </a>
             </Card.Body>
           </Card>
@@ -53,7 +56,10 @@ const Projects = ({ projects }) => {
                 target="_blank"
                 rel="external noopener noreferrer"
               >
-                <Image src="/images/spring-udemy-logo.png" thumbnail />
+                <Image
+                  src="/my-website-reactjs/images/spring-udemy-logo.png"
+                  thumbnail
+                />
               </a>
             </Card.Body>
           </Card>
