@@ -2,13 +2,16 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import styles from "./NavHeader.module.css";
+import Container from "react-bootstrap/Container";
 
-const NavHeader = (props) => {
+const NavHeader = ({ navHeader }) => {
   return (
     <>
       <Navbar className={styles.navbar} expand="lg" fixed="top" bg="light">
-        <div class="container">
-          <Navbar.Brand href="">{props.home}</Navbar.Brand>
+        <Container>
+          <Navbar.Brand href="/" onClick={(event) => event.preventDefault()}>
+            {navHeader.home}
+          </Navbar.Brand>
           <Navbar.Toggle
             className="navbar-toggle"
             aria-controls="basic-navbar-nav"
@@ -20,7 +23,7 @@ const NavHeader = (props) => {
             <Nav className="ml-auto">
               <Nav.Item>
                 <Nav.Link href="mailto:me@jorgesaldivar.com">
-                  {props.contact}
+                  {navHeader.contact}
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
@@ -28,12 +31,12 @@ const NavHeader = (props) => {
                   href="https://github.com/jorgesaldivar/my-website-reactjs"
                   target="_blank"
                 >
-                  {props.source}
+                  {navHeader.source}
                 </Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
-        </div>
+        </Container>
       </Navbar>
     </>
   );

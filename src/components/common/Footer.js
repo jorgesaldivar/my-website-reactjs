@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Footer.module.css";
 
-const Footer = (props) => {
+const Footer = ({ footer }) => {
   return (
     <>
       <br />
@@ -12,7 +12,8 @@ const Footer = (props) => {
         <Row>
           <Col sm={6}>
             <span>
-              © {new Date().getFullYear()} JorgeSaldivar.com. {props.copyrights}
+              © {new Date().getFullYear()} JorgeSaldivar.com.{" "}
+              {footer.copyrights}
             </span>
           </Col>
 

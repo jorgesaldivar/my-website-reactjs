@@ -1,27 +1,27 @@
 import React from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import skills from "./AboutMe.module.css";
+import styles from "./AboutMe.module.css";
 
-const AboutMe = (props) => {
+const AboutMe = ({ aboutMe }) => {
   return (
-    <div className={skills.aboutMeContainer}>
+    <div className={styles.aboutMeContainer}>
       <Container>
         <Row>
           <Col sm={9}>
             <Card>
-              <Card.Body className={skills.well}>
-                <h2>{props.about}</h2>
+              <Card.Body className={styles.well}>
+                <h2>{aboutMe.about}</h2>
 
-                <strong>{props.educationTitle}</strong>
-                <p>{props.education}</p>
+                <strong>{aboutMe.educationTitle}</strong>
+                <p>{aboutMe.education}</p>
 
-                <strong>{props.experienceTitle}</strong>
-                <p>{props.experience}</p>
+                <strong>{aboutMe.experienceTitle}</strong>
+                <p>{aboutMe.experience}</p>
 
                 <ul>
-                  <li>{props.experienceOne}</li>
-                  <li>{props.experienceTwo}</li>
-                  <li>{props.experienceThree}</li>
+                  <li>{aboutMe.experienceOne}</li>
+                  <li>{aboutMe.experienceTwo}</li>
+                  <li>{aboutMe.experienceThree}</li>
                 </ul>
               </Card.Body>
             </Card>
@@ -29,14 +29,14 @@ const AboutMe = (props) => {
 
           <Col sm={3}>
             <Card>
-              <Card.Body className="well">
+              <Card.Body className={styles.well}>
                 <Card.Img src="/images/visa_logo_blu.png" />
               </Card.Body>
             </Card>
 
             <br />
             <Button type="button" variant="primary" size="lg" block disabled>
-              {props.resume}
+              {aboutMe.resume}
             </Button>
           </Col>
         </Row>

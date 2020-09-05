@@ -1,22 +1,18 @@
 import React from "react";
 import { Container, Carousel } from "react-bootstrap";
-import "./Preview.css";
+import styles from "./Preview.module.css";
 
-const Preview = (props) => {
+const Preview = ({ preview }) => {
   return (
-    <div className="well">
-      <Container className="carousel text-center">
+    <div className={styles.well}>
+      <Container className="text-center">
         <br />
-        <h3>{props.title}</h3>
+        <h3>{preview.title}</h3>
         <br />
 
-        <Carousel controls={true} interval={3000}>
-          <Carousel.Item>
-            <img alt={props.firstItem} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img alt={props.secondItem} />
-          </Carousel.Item>
+        <Carousel controls={false} interval={3000} prevIcon="" nextIcon="">
+          <Carousel.Item>{preview.firstItem}</Carousel.Item>
+          <Carousel.Item>{preview.secondItem}</Carousel.Item>
         </Carousel>
 
         <br />

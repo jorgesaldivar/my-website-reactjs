@@ -1,11 +1,11 @@
-.skills h4 {
+h4 {
   font-size: 18px;
 }
 
-.skills p {
+p {
   font-size: 14px;
 }
 
-.skills .card {
+.card {
   place-items: center;
 }

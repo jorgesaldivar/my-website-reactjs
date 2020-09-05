@@ -15,7 +15,7 @@
     "educationTitle": "Education:",
     "education": "B.S. in Information and Computer Science at Monterrey Institute of Technology and Higher Education",
     "experienceTitle": "Experience:",
-    "experience": "+{{years}} years of experience in software industry. Mostly experienced in programming languages such as Java EE, Spring, JPA, JavaScript, and Oracle SQL for RDBMS. Projects I have worked on:",
+    "experience": "I am a full-time Software Engineer, spending my time writing really great software, mostly back-end oriented. I have +{{years}} years of experience in the software industry. I've been writing software for quite a while now, both for work and pleasure. I enjoy continuing to learn and try out new technologies. Most of my expertise is with Java and Spring Framework, interacting with either a SQL or NoSQL database. Briefly, some projects I have worked on:",
     "experienceOne": "Software Development",
     "experienceTwo": "Data Analysis",
     "experienceThree": "Scripting",

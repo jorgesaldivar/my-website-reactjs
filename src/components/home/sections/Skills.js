@@ -2,18 +2,18 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf, faDatabase } from "@fortawesome/free-solid-svg-icons";
-import "./Skills.css";
+import styles from "./Skills.module.css";
 
-const Skills = (props) => {
+const Skills = ({ skills }) => {
   return (
-    <Container className="text-center skills">
-      <h2 class="text-center">{props.title}</h2>
+    <Container className="text-center">
+      <h2 className="text-center">{skills.title}</h2>
 
       <br />
 
       <Row>
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "java"]} size="2x" />
             <span>&nbsp;</span>
@@ -22,8 +22,13 @@ const Skills = (props) => {
             <p>Back-End</p>
           </Card>
         </Col>
+
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "js-square"]} size="2x" />
             <span>&nbsp;</span>
@@ -32,8 +37,13 @@ const Skills = (props) => {
             <p>Front-End</p>
           </Card>
         </Col>
+
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "python"]} size="2x" />
             <span>&nbsp;</span>
@@ -47,7 +57,7 @@ const Skills = (props) => {
 
       <Row>
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={faLeaf} size="2x" />
             <span>&nbsp;</span>
@@ -56,8 +66,12 @@ const Skills = (props) => {
           </Card>
         </Col>
 
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "github-square"]} size="2x" />
             <span>&nbsp;</span>
@@ -66,8 +80,12 @@ const Skills = (props) => {
           </Card>
         </Col>
 
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "react"]} size="2x" />
             <span>&nbsp;</span>
@@ -81,7 +99,7 @@ const Skills = (props) => {
 
       <Row>
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "docker"]} size="2x" />
             <span>&nbsp;</span>
@@ -90,8 +108,12 @@ const Skills = (props) => {
           </Card>
         </Col>
 
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={faDatabase} size="2x" />
             <span>&nbsp;</span>
@@ -100,8 +122,12 @@ const Skills = (props) => {
           </Card>
         </Col>
 
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
-          <Card>
+          <Card className={styles.card}>
             <span>&nbsp;</span>
             <FontAwesomeIcon icon={["fab", "linux"]} size="2x" />
             <span>&nbsp;</span>

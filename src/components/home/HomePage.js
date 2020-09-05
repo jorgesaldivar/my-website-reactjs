@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./HomePage.css";
 import NavHeader from "../common/NavHeader";
 import JumboTron from "./sections/JumboTron";
@@ -11,52 +11,71 @@ import Footer from "../common/Footer";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
-  const [t, i18n] = useTranslation("common");
+  const [t] = useTranslation("common");
+  const [navHeader, setNavHeader] = useState({});
+  const [jumboTron, setJumboTron] = useState({});
+  const [aboutMe, setAboutMe] = useState({});
+  const [preview, setPreview] = useState({});
+  const [certifications, setCertifications] = useState({});
+  const [skills, setSkills] = useState({});
+  const [projects, setProjects] = useState({});
+  const [footer, setFooter] = useState({});
+
+  useEffect(() => {
+    setNavHeader({
+      home: t("NavHeader.home"),
+      contact: t("NavHeader.contact"),
+      source: t("NavHeader.source"),
+    });
+    setJumboTron({ title: t("JumboTron.title") });
+    setAboutMe({
+      about: t("AboutMe.about"),
+      educationTitle: t("AboutMe.educationTitle"),
+      education: t("AboutMe.education"),
+      experienceTitle: t("AboutMe.experienceTitle"),
+      experience: t("AboutMe.experience", {
+        years: new Date().getFullYear() - new Date(2013, 6, 1).getFullYear(),
+      }),
+      experienceOne: t("AboutMe.experienceOne"),
+      experienceTwo: t("AboutMe.experienceTwo"),
+      experienceThree: t("AboutMe.experienceThree"),
+      resume: t("AboutMe.resume"),
+    });
+    setPreview({
+      title: t("Preview.title"),
+      firstItem: t("Preview.firstItem"),
+      secondItem: t("Preview.secondItem"),
+    });
+    setCertifications({ title: t("Certifications.title") });
+    setSkills({ title: t("Skills.title") });
+    setProjects({
+      title: t("Projects.title"),
+      firstItem: t("Projects.firstItem"),
+      secondItem: t("Projects.secondItem"),
+    });
+    setFooter({ copyrights: t("Footer.copyrights") });
+  }, [t]);
 
   return (
     <>
-      <NavHeader
-        home={t("NavHeader.home")}
-        contact={t("NavHeader.contact")}
-        source={t("NavHeader.source")}
-      />
-      <JumboTron title={t("JumboTron.title")} />
-      <AboutMe
-        about={t("AboutMe.about")}
-        educationTitle={t("AboutMe.educationTitle")}
-        education={t("AboutMe.education")}
-        experienceTitle={t("AboutMe.experienceTitle")}
-        experience={t("AboutMe.experience", {
-          years: new Date().getFullYear() - new Date(2013, 6, 1).getFullYear(),
-        })}
-        experienceOne={t("AboutMe.experienceOne")}
-        experienceTwo={t("AboutMe.experienceTwo")}
-        experienceThree={t("AboutMe.experienceThree")}
-        resume={t("AboutMe.resume")}
-      />
-      <Preview
-        title={t("Preview.title")}
-        firstItem={t("Preview.firstItem")}
-        secondItem={t("Preview.secondItem")}
-      />
+      <NavHeader navHeader={navHeader} />
+      <JumboTron jumboTron={jumboTron} />
+      <AboutMe aboutMe={aboutMe} />
+      <Preview preview={preview} />
       <div className="back-pattern">
         <br />
         <br />
-        <Certifications title={t("Certifications.title")} />
+        <Projects projects={projects} />
         <br />
         <hr />
         <br />
-        <Skills title={t("Skills.title")} />
+        <Certifications certifications={certifications} />
         <br />
         <hr />
         <br />
-        <Projects
-          title={t("Projects.title")}
-          firstItem={t("Projects.firstItem")}
-          secondItem={t("Projects.secondItem")}
-        />
+        <Skills skills={skills} />
       </div>
-      <Footer copyrights={t("Footer.copyrights")} />
+      <Footer footer={footer} />
     </>
   );
 };

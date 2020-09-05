@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 
-const Projects = (props) => {
+const Projects = ({ projects }) => {
   return (
     <Container>
-      <h2 class="text-center">{props.title}</h2>
+      <h2 className="text-center">{projects.title}</h2>
 
       <br />
 
@@ -17,7 +17,7 @@ const Projects = (props) => {
                 target="_blank"
                 rel="external noopener noreferrer"
               >
-                {props.firstItem}
+                {projects.firstItem}
               </a>
             </Card.Header>
             <Card.Body>
@@ -32,6 +32,10 @@ const Projects = (props) => {
           </Card>
         </Col>
 
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
+
         <Col sm={4}>
           <Card>
             <Card.Header>
@@ -40,7 +44,7 @@ const Projects = (props) => {
                 target="_blank"
                 rel="external noopener noreferrer"
               >
-                {props.secondItem}
+                {projects.secondItem}
               </a>
             </Card.Header>
             <Card.Body>

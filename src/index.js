@@ -23,12 +23,10 @@ i18next.init({
 });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <I18nextProvider i18n={i18next}>
-        <App />
-      </I18nextProvider>
-    </Router>
-  </React.StrictMode>,
+  <Router>
+    <I18nextProvider i18n={i18next}>
+      <App />
+    </I18nextProvider>
+  </Router>,
   document.getElementById("root")
 );
