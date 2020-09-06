@@ -14,7 +14,7 @@
     "about": "Acerca de mí",
     "educationTitle": "Educación:",
     "education": "Ingeniero en Tecnologías de Información y Comunicación en el Instituto Tecnológico y de Estudios Superiores de Monterrey",
-    "experienceTitle": "Educación:",
+    "experienceTitle": "Experiencia:",
     "experience": "Soy un ingeniero en sistemas trabajando tiempo completo desarrollando muy buen software, principalmente orientado al back-end. Tengo +{{years}} años de experience en la industria de software. Llevo escribiendo software ya por un buen tiempo, tanto para el trabajo y por placer. Me fascina aprender y probar nuevas tecnologías. La mayor parte de mi experiencia es con Java y Spring Framework, interactuando con una base de datos ya sea en SQL o NoSQL. Brevemente, algunos proyectos en los que he trabajado:",
     "experienceOne": "Desarrollo de aplicaciones",
     "experienceTwo": "Análisis de datos",
