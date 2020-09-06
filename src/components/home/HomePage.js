@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./HomePage.css";
+import "./HomePage.module.css";
 import NavHeader from "../common/NavHeader";
 import JumboTron from "./sections/JumboTron";
 import AboutMe from "./sections/AboutMe";
