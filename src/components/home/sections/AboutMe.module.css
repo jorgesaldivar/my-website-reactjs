@@ -3,8 +3,7 @@
 }
 
 .aboutMeContainer {
-  background: url("/my-website-reactjs/images/Austin_Evening.jpg") no-repeat
-    center fixed;
+  background: url("/images/Austin_Evening.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
