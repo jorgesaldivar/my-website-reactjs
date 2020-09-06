@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Jumbotron, Container, Col } from "react-bootstrap";
+import { Jumbotron, Container, Col, Row } from "react-bootstrap";
 import styles from "./JumboTron.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -42,6 +42,9 @@ const JumboTron = ({ jumboTron }) => {
           <h6>{jumboTron.title}</h6>
         </div>
         <br />
+        <Row className="d-block d-sm-none">
+          <Col> &nbsp;</Col>
+        </Row>
       </Container>
     </Jumbotron>
   );

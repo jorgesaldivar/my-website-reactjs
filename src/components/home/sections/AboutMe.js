@@ -27,6 +27,10 @@ const AboutMe = ({ aboutMe }) => {
             </Card>
           </Col>
 
+          <Row className="d-block d-sm-none">
+            <Col> &nbsp;</Col>
+          </Row>
+
           <Col sm={3}>
             <Card>
               <Card.Body className={styles.well}>
