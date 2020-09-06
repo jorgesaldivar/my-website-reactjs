@@ -3,15 +3,16 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import styles from "./NavHeader.module.css";
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
 const NavHeader = ({ navHeader }) => {
   return (
     <>
       <Navbar className={styles.navbar} expand="lg" fixed="top" bg="light">
         <Container>
-          <Navbar.Brand href="/" onClick={(event) => event.preventDefault()}>
-            {navHeader.home}
-          </Navbar.Brand>
+          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+            <Navbar.Brand>{navHeader.home}</Navbar.Brand>
+          </Link>
           <Navbar.Toggle
             className="navbar-toggle"
             aria-controls="basic-navbar-nav"
