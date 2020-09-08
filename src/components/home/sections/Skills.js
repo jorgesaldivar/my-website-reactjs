@@ -13,9 +13,13 @@ const Skills = ({ skills }) => {
 
       <Row>
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "java"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "java"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
 
             <h4>Java</h4>
@@ -28,9 +32,13 @@ const Skills = ({ skills }) => {
         </Row>
 
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "js-square"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "js-square"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
 
             <h4>JavaScript</h4>
@@ -43,9 +51,13 @@ const Skills = ({ skills }) => {
         </Row>
 
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "python"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "python"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
             <h4>Python</h4>
             <p>Back-End</p>
@@ -57,9 +69,9 @@ const Skills = ({ skills }) => {
 
       <Row>
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={faLeaf} size="2x" />
+            <FontAwesomeIcon icon={faLeaf} size="2x" className={styles.card} />
             <span>&nbsp;</span>
             <h4>Spring Framework</h4>
             <p>Java Framework</p>
@@ -71,9 +83,13 @@ const Skills = ({ skills }) => {
         </Row>
 
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "github-square"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "github-square"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
             <h4>Git</h4>
             <p>Version control</p>
@@ -85,9 +101,13 @@ const Skills = ({ skills }) => {
         </Row>
 
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "react"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "react"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
             <h4>ReactJS</h4>
             <p>JavaScript Library</p>
@@ -99,9 +119,13 @@ const Skills = ({ skills }) => {
 
       <Row>
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "docker"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "docker"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
             <h4>Docker</h4>
             <p>Containerization</p>
@@ -113,9 +137,13 @@ const Skills = ({ skills }) => {
         </Row>
 
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={faDatabase} size="2x" />
+            <FontAwesomeIcon
+              icon={faDatabase}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
             <h4>SQL/NoSQL</h4>
             <p>Databases</p>
@@ -127,9 +155,13 @@ const Skills = ({ skills }) => {
         </Row>
 
         <Col sm={4}>
-          <Card className={styles.card}>
+          <Card>
             <span>&nbsp;</span>
-            <FontAwesomeIcon icon={["fab", "linux"]} size="2x" />
+            <FontAwesomeIcon
+              icon={["fab", "linux"]}
+              size="2x"
+              className={styles.card}
+            />
             <span>&nbsp;</span>
             <h4>UNIX</h4>
             <p>Scripting</p>

@@ -7,5 +7,6 @@ p {
 }
 
 .card {
-  place-items: center;
+  display: block;
+  margin: auto;
 }
